@@ -31,7 +31,7 @@ class MessageBubble extends StatelessWidget {
             padding: const EdgeInsets.only(right: 8.0),
             child: CircleAvatar(
               backgroundColor: Theme.of(context).colorScheme.secondary,
-              child: Icon(Icons.smart_toy, color: Colors.white),
+              child: Icon(Icons.person, color: Colors.white),
             ),
           ),
         ],

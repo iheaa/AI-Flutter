@@ -78,7 +78,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Future<String> _getAiResponse(String prompt) async {
     try {
       const apiKey =
-          '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'; // OpenRouter API key
+          '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'; // OpenRouter API key
       const url = 'https://openrouter.ai/api/v1/chat/completions';
       print('Sending request to OpenRouter...');
 
@@ -92,7 +92,7 @@ class _ChatScreenState extends State<ChatScreen> {
               'X-Title': 'Ainya Chat App', // Optional
             },
             body: jsonEncode({
-              'model': 'meta-llama/llama-3.2-3b-instruct:free', // Free model
+              'model': 'meta-llama/llama-3.1-8b-instruct', // Free model
               'messages': [
                 {
                   'role': 'system',
